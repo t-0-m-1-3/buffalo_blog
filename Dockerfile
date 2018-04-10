@@ -2,8 +2,8 @@
 # https://docs.docker.com/engine/userguide/eng-image/multistage-build/
 FROM gobuffalo/buffalo:v0.11.0 as builder
 
-RUN mkdir -p $GOPATH/src/path/to/app
-WORKDIR $GOPATH/src/path/to/app
+RUN mkdir -p $GOPATH/src/github.com/t-0-m-1-3/buffalo_blog
+WORKDIR $GOPATH/src/github.com/t-0-m-1-3/buffalo_blog
 
 # this will cache the npm install step, unless package.json changes
 ADD package.json .
